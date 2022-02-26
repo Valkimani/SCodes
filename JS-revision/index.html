@@ -17,6 +17,15 @@
       // Alert ["Too bad for you"]
 
       let firstName = prompt("What is your first name?");
+      firstName=firstName.trim();
+      firstName=firstName.toLowerCase();
+
+      if (firstName.length > 0){
+          alert ("Welcome ," + firstName + "!")
+      }else{
+          alert("Too bad for you.")
+      }
+
       
         </script>
     </body>
