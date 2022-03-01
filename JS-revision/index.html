@@ -26,7 +26,35 @@
           alert("Too bad for you.")
       }
 
+
+      ////JS Challenge 1
+     //Given a variable country set to "Guinea Bissau", replace the space by a "-", console.log the variable
+     let country = "Guinea Bissau";
+     country = country.replace(" ", "-");
+      console.log(country)
       
+      //JS Challenge 2
+      //Given a variable city set to " Sydney ", remove the extra spaces and console log it
+
+    let city = " Sydney ";
+    city=city.trim();
+      
+      //JS Challenge 3
+      //Given a variable attraction set to "Opera House", lower case it and console log it
+
+      let attraction = "Opera House";
+      attraction=attraction.toLowerCase().trim();
+  
+      //JS Challenge 4
+      //Given a variable place set to "school", upper case it and console log it
+      let place = "school";
+      place=place.toUpperCase();
+      
+      //JS Challenge 5
+      //Using TEMPLATE LITERALS, log this sentence, "I went to visit the Opera House in Sydney, right next to my school. Now, I'm getting ready for my trip to Guinea Bissau!"/
+       let sentence = `I went to visit the ${attraction} in ${city},right next to my ${place}. Now, I'm getting ready for my trip to ${country}!`;
+     console.log(sentence);
+       
         </script>
     </body>
 </html>
