@@ -13,11 +13,65 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
+        <H2>Array</H2>
         <P>Data structure used to create collections of data in an easier way that using variables.</P>
         <P>An array allows collection of data.</P>
+        <p>Syntax []. Separated by a comma.</p>
+        <p>An array index always starts from zero.</p>
+
+        <h2>Looping</h2>
+       <p> Looping through an array i.e go through each item one by one and do something with it.</p> 
+    
+       <!--Part 3-->
+       Create function that loops through the ul,li elements
+        <ul>
+            <li>Lisbon</li>
+            <li>Moscow</li>
+            <li>Cape Town</li>
+        </ul>
         
-        
-        
-        <script src="" async defer></script>
+        <script>
+
+ //Part 1
+            //let cities = ["New York", "Paris", "Moscow", "Sydney"];
+           // console. log(cities);
+           // console. log(cities.length);
+           // console.log(cities[0]);
+// Replace a city. Replace Paris with London
+//cities[1] = "London";
+//Add another city
+//cities[4] = "Madrid";
+
+
+//Part 2
+function showCity(city){
+   console.log(city)
+}
+let cities = ["Las Vegas", "London", "Moscow", "Sydney"];
+
+ //to go through each city, forEach is used. It loops through each item of the array and calls
+ //the function showCity. foe each will call showCity function ath the top sending the parameter
+ // city from the cities array.
+cities.forEach(showCity);
+
+//forEach function loops through each item of the array and call a function (show city)
+//It will give us the city inside the parameters
+
+//Part 3
+//select all li, go through each city, call function displayCity, this will be an element 
+//that I have access through html element//
+
+
+
+//Function that loops through different elements
+function displayCity(cityElement){
+    console.log(cityElement.innerHTML);
+    cityElement.innerHTML="<strong>"+ cityElement.innerHTML+"<strong>"
+}
+
+//select everything in the li, 
+let CITIES=document.querySelectorAll("li");
+CITIES.forEach(displayCity)
+        </script>
     </body>
 </html>
