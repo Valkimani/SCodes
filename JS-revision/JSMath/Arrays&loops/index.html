@@ -100,8 +100,11 @@ weekDays.shift()
 console.log(weekDays);
 // Challenge 5
 // Log every day of the week this way:`Temperature on Monday is 18 degrees’
-console.log(`Temperature on ${weekDays[3]} is 18 degrees`);
-console.log(`Temperature on ${weekDays[4]} is 18 degrees`);
+weekDays.forEach(function(day){
+    console.log(`Temperature on ${day} is 18 degrees`);
+});
+//console.log(`Temperature on ${weekDays[3]} is 18 degrees`);
+//console.log(`Temperature on ${weekDays[4]} is 18 degrees`);
 
 
         </script>
