@@ -66,12 +66,37 @@ cities.forEach(showCity);
 //Function that loops through different elements
 function displayCity(cityElement){
     console.log(cityElement.innerHTML);
-    cityElement.innerHTML="<strong>"+ cityElement.innerHTML+"<strong>"
+    //make element bold
+    cityElement.innerHTML="<strong>"+ cityElement.innerHTML+"</strong>";
 }
 
 //select everything in the li, 
 let CITIES=document.querySelectorAll("li");
 CITIES.forEach(displayCity)
+
+
+// Challenge 1
+// Create an array weekDays with all days of the week, console log the array
+let weekDays = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun",]
+// Challenge 2
+// Log ‘Monday’ and ‘Sunday’
+console.log (weekDays[0]);
+console.log (weekDays[6]);
+
+// Challenge 3
+// Change ‘Sunday’ by ‘Funday’
+// Log the array
+
+
+// Challenge 4
+// Remove Monday and Tuesday
+// Log the array
+//Use shift method removes the first element from an array and returns that removed element
+
+// Challenge 5
+// Log every day of the week this way:`Temperature on Monday is 18 degrees’
+
+
         </script>
     </body>
 </html>
