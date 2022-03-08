@@ -78,6 +78,7 @@ CITIES.forEach(displayCity)
 // Challenge 1
 // Create an array weekDays with all days of the week, console log the array
 let weekDays = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun",]
+console.log(weekDays)
 // Challenge 2
 // Log ‘Monday’ and ‘Sunday’
 console.log (weekDays[0]);
@@ -86,15 +87,21 @@ console.log (weekDays[6]);
 // Challenge 3
 // Change ‘Sunday’ by ‘Funday’
 // Log the array
-
+weekDays[6]="Sun"
+weekDays[6]="Fun"
+console.log(weekDays);
 
 // Challenge 4
 // Remove Monday and Tuesday
 // Log the array
 //Use shift method removes the first element from an array and returns that removed element
-
+weekDays.shift()
+weekDays.shift()
+console.log(weekDays);
 // Challenge 5
 // Log every day of the week this way:`Temperature on Monday is 18 degrees’
+console.log(`Temperature on ${weekDays[3]} is 18 degrees`);
+console.log(`Temperature on ${weekDays[4]} is 18 degrees`);
 
 
         </script>
